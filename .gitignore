@@ -6,6 +6,9 @@ config/*
 outputInfo.json
 config/.DS_Store
 !config/keys
+!config/nodeConfigTier1-2.json
+!config/nodeConfigTier3.json
+!config/orbitSetupScriptConfig.json
 network.json
 docker-compose/services/blockscout-db-data
 docker-compose/services/redis-data

@@ -1,0 +1,53 @@
+{
+    "chain": {
+        "info-json": "[{\"chain-id\":102018,\"parent-chain-id\":421614,\"parent-chain-is-arbitrum\":true,\"chain-name\":\"SparkChain Testnet\",\"chain-config\":{\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":true,\"InitialArbOSVersion\":11,\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152,\"InitialChainOwner\":\"0xA5690875355eeAAe58AD4EB9639e5C16F7201617\"},\"chainId\":102018},\"rollup\":{\"bridge\":\"0xBE2DcD256c8abE2F90667649763DD79bdb9C31d6\",\"inbox\":\"0x48023aa73dD6963B0A38B0a201E8d1Aa73dd0365\",\"sequencer-inbox\":\"0x11B29B6995e1892a940cBf49A0b60dBaDF7b2442\",\"rollup\":\"0x42FACd6015872B7FC4A42258C475108A430Ba5a5\",\"validator-utils\":\"0xB11EB62DD2B352886A4530A9106fE427844D515f\",\"validator-wallet-creator\":\"0xEb9885B6c0e117D339F47585cC06a2765AaE2E0b\",\"deployed-at\":17532228}}]",
+        "name": "SparkChain Testnet"
+    },
+    "parent-chain": {
+        "connection": {
+            "url": "https://sepolia-rollup.arbitrum.io/rpc"
+        }
+    },
+    "http": {
+        "addr": "0.0.0.0",
+        "port": 8449,
+        "vhosts": "*",
+        "corsdomain": "*",
+        "api": [
+            "eth",
+            "net",
+            "web3",
+            "arb",
+            "debug"
+        ]
+    },
+    "node": {
+        "sequencer": true,
+        "delayed-sequencer": {
+            "enable": true,
+            "use-merge-finality": false,
+            "finalize-distance": 1
+        },
+        "staker": {
+            "enable": true,
+            "strategy": "MakeNodes",
+            "parent-chain-wallet": {
+            "private-key": "PRIVATEKEY"
+            }
+        },
+        "dangerous": {
+            "no-sequencer-coordinator": true
+        }
+    },
+    "execution": {
+        "forwarding-target": "",
+        "sequencer": {
+            "enable": true,
+            "max-tx-data-size": 85000,
+            "max-block-speed": "250ms"
+        },
+        "caching": {
+            "archive": true
+        }
+    }
+}
