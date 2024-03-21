@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  nitro:
+    image: offchainlabs/nitro-node:v2.2.5-a20a1c7
+    ports:
+      - "127.0.0.1:8449:8449"
+    volumes:
+      - "./config:/home/user/.arbitrum"
+    command: --conf.file /home/user/.arbitrum/nodeConfigTier3.json
