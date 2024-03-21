@@ -22,6 +22,11 @@
         ]
     },
     "node": {
+        "inbox-reader": {
+            "default-blocks-to-read": 10,
+            "min-blocks-to-read": 10,
+            "max-blocks-to-read": 10
+        },
         "sequencer": true,
         "delayed-sequencer": {
             "enable": true,
