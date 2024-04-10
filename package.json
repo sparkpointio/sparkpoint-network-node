@@ -1,8 +1,8 @@
 {
     "name": "sparkpoint-network-node",
     "scripts": {
-      "start": "sudo docker-compose up -d",
-      "logs": "sudo docker-compose logs -f"
+      "start": "docker-compose up -d",
+      "logs": "docker-compose logs -f"
     }
   }
   
