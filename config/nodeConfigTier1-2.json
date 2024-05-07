@@ -37,11 +37,20 @@
             "enable": true,
             "strategy": "MakeNodes",
             "parent-chain-wallet": {
-            "private-key": "PRIVATEKEY"
+            "private-key": "PRIVATE KEY"
             }
         },
         "dangerous": {
             "no-sequencer-coordinator": true
+        },
+        "data-availability": {
+            "enable": true,
+            "sequencer-inbox-address": "0x4823814f5fBeA3fDffCaFCD4099b8Ee0869446b6",
+            "parent-chain-node-url": "https://sepolia-rollup.arbitrum.io/rpc",
+            "rest-aggregator": {
+            "enable": true,
+            "urls": "https://testnet-dasrest.sparkpoint.network"
+            }
         }
     },
     "execution": {
