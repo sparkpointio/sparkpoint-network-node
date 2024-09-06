@@ -6,4 +6,4 @@ services:
       - "127.0.0.1:8449:8449"
     volumes:
       - "./config:/home/user/.arbitrum"
-    command: --conf.file /home/user/.arbitrum/nodeConfigTier3.json
+    command: --conf.file /home/user/.arbitrum/nodeConfig.json

@@ -6,6 +6,7 @@ config/*
 outputInfo.json
 config/.DS_Store
 !config/keys
+!config/nodeConfig.json
 !config/nodeConfigTier1-2.json
 !config/nodeConfigTier3.json
 !config/orbitSetupScriptConfig.json
